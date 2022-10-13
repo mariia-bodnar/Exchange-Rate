@@ -7,7 +7,9 @@ import { ExchangeRate } from './ExchangeRate'
 
 const GlobalStyles = createGlobalStyle`
 :root {
-  --container-xl-pd : 100px;
+  --container-ml-pd : 10%;
+  --container-s-pd : 5%;
+  --main-color: #90f310;
 }
 
   body{
@@ -24,11 +26,16 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
   .container {
-    width: calc(100% - 2*var(--container-xl-pd));
-    padding: var(--container-xl-pd);
-    height: calc(100% - 2*var(--container-xl-pd));
+    width: calc(100% - 2*var(--container-ml-pd));
+    padding: var(--container-ml-pd);
+    height: calc(100% - 2*var(--container-ml-pd));
     display: flex;
     justify-content: center;
+    @media (max-width: 767px) {
+      width: calc(100% - 2*var(--container-s-pd));
+    padding: var(--container-s-pd);
+    height: calc(100% - var(--container-s-pd));
+    }
   }
 `
 function App() {
