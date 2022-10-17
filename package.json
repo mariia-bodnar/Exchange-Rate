@@ -9,9 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "axios": "^1.1.2",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/material": "^5.10.9",
+    "big.js": "^6.2.1",
+    "mui": "^0.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "select": "^1.1.2",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
